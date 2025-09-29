@@ -137,6 +137,10 @@
 
             <script>
             function openCV() {
+              if (window.matchMedia('(max-width: 768px)').matches) {
+                window.open('assets/Miray-CV.pdf', '_blank');
+                return;
+              }
               document.getElementById("cv-modal").style.display = "block";
             }
             function closeCV() {
